@@ -1,0 +1,5 @@
+name: NovaPerms
+version: 0.1
+main: NovaPerms
+authors: [Spideynn]
+softdepend: [Vault]
