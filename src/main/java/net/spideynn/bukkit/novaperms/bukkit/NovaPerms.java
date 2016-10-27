@@ -125,9 +125,6 @@ public class NovaPerms extends JavaPlugin {
         p.removeAttachment(attachment);
     }
 
-    /*
-        doing some experimenting below :D
-     */
     private void registerCommand(CommandExecutor executor) {
         Preconditions.checkNotNull(executor);
         Command command = executor.getClass().getAnnotation(Command.class);
@@ -155,7 +152,7 @@ public class NovaPerms extends JavaPlugin {
         }
 
         map.register(getClass().getSimpleName().toLowerCase(), cmd);
-        System.out.printf("[NovaPerms] Registered command %s", command.name());
+        getLogger().info("[NovaPerms] Registered command " + command.name());
     }
 
     @SneakyThrows
